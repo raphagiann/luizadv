@@ -306,7 +306,6 @@ h2 {
   gap: clamp(40px, 6vw, 90px);
   align-items: center;
 }
-.sobre-img-wrap { position: relative; }
 .sobre-img {
   width: 100%;
   max-width: clamp(200px, 22vw, 320px);
