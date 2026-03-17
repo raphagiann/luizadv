@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Luiz Eduardo Viana – Advogado</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
   <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 </head>
@@ -13,44 +13,59 @@
 
   <!-- NAVBAR -->
   <header class="navbar" id="navbar">
-    <button class="hamburger" id="hamburger" aria-label="Menu">
-      <span></span><span></span><span></span>
-    </button>
-    <nav class="nav-links" id="nav-links">
-      <a href="#sobre">Sobre</a>
-      <a href="#atuacao">Áreas de Atuação</a>
-      <a href="#diferenciais">Diferenciais</a>
-      <a href="#contato">Contato</a>
-    </nav>
+    <div class="container nav-inner">
+      <a href="#hero" class="nav-brand">
+        <span class="nav-nome">Luiz Eduardo Viana</span>
+        <span class="nav-oab">Advogado · OAB/MG 243.550</span>
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav-links" id="nav-links">
+        <a href="#sobre">Sobre</a>
+        <a href="#atuacao">Atuação</a>
+        <a href="#diferenciais">Diferenciais</a>
+        <a href="#contato" class="nav-cta">Contato</a>
+      </nav>
+    </div>
   </header>
 
   <!-- HERO -->
   <section class="hero" id="hero">
     <div class="hero-overlay"></div>
     <div class="container hero-content">
-      <p class="hero-sub">Advocacia com excelência e comprometimento</p>
-      <h1>Luiz Eduardo Viana</h1>
-      <p class="hero-oab">Advogado OAB/MG 243.550</p>
-      <a href="#contato" class="btn-primary">Fale Conosco</a>
+      <div class="hero-tag">Advocacia Especializada</div>
+      <h1>Luiz Eduardo<br><em>Viana Alves</em></h1>
+      <div class="hero-divider"></div>
+      <p class="hero-oab">OAB/MG 243.550</p>
+      <p class="hero-desc">Direito do Consumidor · Direito Cível · Direito Aéreo</p>
+      <div class="hero-actions">
+        <a href="#contato" class="btn-primary">Agendar Consulta</a>
+        <a href="#sobre" class="btn-ghost">Conheça o Escritório</a>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span></span>
     </div>
   </section>
 
-<!-- SOBRE -->
+  <!-- SOBRE -->
   <section class="section" id="sobre">
-    <div class="container two-col">
-      <div class="text-block">
-        <span class="label">Sobre</span>
-        <h2>Comprometimento e ética em cada caso</h2>
-        <p>Dr. Luiz Eduardo Alves Viana iniciou sua trajetória acadêmica na Faculdade da Saúde e Ecologia Humana (FASEH), onde construiu uma base sólida pautada na disciplina, comprometimento e excelência. Durante a graduação, destacou-se pela postura proativa e pelo constante envolvimento com a prática jurídica, buscando desde cedo vivenciar a realidade da advocacia.</p>
-        <p>Ao longo de sua formação, realizou estágio na Procuradoria-Geral do Município de Vespasiano, onde teve contato direto com a atuação pública, além de experiências em escritórios de advocacia, que contribuíram significativamente para o desenvolvimento de sua técnica processual, visão estratégica e atendimento ao cliente.</p>
-        <p>Especialista em advocacia trabalhista, com pós-graduação na área, o Dr. Luiz Eduardo alia conhecimento técnico aprofundado à prática jurídica eficiente, atuando com segurança e assertividade na condução de demandas complexas.</p>
-        <p>Atualmente, o Dr. Luiz Eduardo cursa pós-graduação em Direito Aéreo, reforçando seu compromisso com a constante atualização e a excelência na prestação de serviços jurídicos.</p>
-        <p>Sua atuação é marcada por uma advocacia moderna, estratégica e ao mesmo tempo acessível, pautada na ética, na transparência e no compromisso com resultados concretos. Ao longo de sua trajetória, consolidou um perfil profissional que valoriza o atendimento próximo, a escuta ativa e a construção de soluções personalizadas para cada cliente.</p>
-        <p>Hoje, o Dr. Luiz Eduardo exerce uma advocacia completa, unindo técnica, dedicação e sensibilidade, sempre com o propósito de oferecer segurança jurídica e efetividade na defesa dos interesses de seus clientes.</p>
-        <a href="#contato" class="btn-outline">Agendar Consulta</a>
+    <div class="container sobre-grid">
+      <div class="sobre-img-wrap">
+        <img src="01@2x.png" alt="Dr. Luiz Eduardo Viana" class="sobre-img" />
+        <div class="sobre-badge">
+          
+        </div>
       </div>
-      <div class="logo-block">
-        <img src="01@2x.png" alt="Luiz Eduardo Viana" class="marca" />
+      <div class="sobre-texto">
+        <span class="eyebrow">Sobre o Advogado</span>
+        <h2>Comprometimento<br>e ética em cada caso</h2>
+        <div class="gold-bar"></div>
+        <p>Dr. Luiz Eduardo Alves Viana iniciou sua trajetória acadêmica na Faculdade da Saúde e Ecologia Humana (FASEH), construindo uma base sólida pautada na disciplina e excelência. Durante a graduação, realizou estágio na Procuradoria-Geral do Município de Vespasiano e em escritórios de advocacia, desenvolvendo técnica processual e visão estratégica.</p>
+        <p>Especialista em advocacia trabalhista com pós-graduação na área, e atualmente cursando pós-graduação em Direito Aéreo, o Dr. Luiz Eduardo alia conhecimento técnico aprofundado à prática jurídica eficiente.</p>
+        <p>Sua atuação é marcada por uma advocacia moderna, estratégica e acessível, pautada na ética, transparência e compromisso com resultados concretos.</p>
+        <a href="#contato" class="btn-primary">Fale com o Dr. Luiz Eduardo</a>
       </div>
     </div>
   </section>
@@ -58,23 +73,35 @@
   <!-- ÁREAS DE ATUAÇÃO -->
   <section class="section section-dark" id="atuacao">
     <div class="container">
-      <span class="label label-light">Especialidades</span>
-      <h2 class="center">Áreas de Atuação</h2>
+      <div class="section-header center">
+        <span class="eyebrow eyebrow-light">Especialidades</span>
+        <h2>Áreas de Atuação</h2>
+        <div class="gold-bar center"></div>
+      </div>
       <div class="cards">
         <div class="card">
-          <div class="card-icon">🛡️</div>
+          <div class="card-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
           <h3>Direito do Consumidor</h3>
-          <p>Defesa dos direitos do consumidor em relações de consumo e práticas abusivas.</p>
+          <p>Defesa dos direitos do consumidor em relações de consumo, cobranças indevidas e práticas abusivas.</p>
+          <a href="#contato" class="card-link">Saiba mais →</a>
         </div>
         <div class="card">
-          <div class="card-icon">⚖️</div>
+          <div class="card-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 3v18M3 12h18M5.6 5.6l12.8 12.8M18.4 5.6L5.6 18.4"/><circle cx="12" cy="12" r="9"/></svg>
+          </div>
           <h3>Direito Cível</h3>
-          <p>Contratos, responsabilidade civil e direitos reais.</p>
+          <p>Contratos, responsabilidade civil, indenizações e direitos reais com atuação estratégica.</p>
+          <a href="#contato" class="card-link">Saiba mais →</a>
         </div>
         <div class="card">
-          <div class="card-icon">✈️</div>
+          <div class="card-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.68A2 2 0 012 .99h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/><path d="M17 3a4 4 0 010 8M21 3a8 8 0 010 8"/></svg>
+          </div>
           <h3>Direito Aéreo</h3>
-          <p>Defesa do passageiro em casos de cancelamento, atraso de voos, extravio de bagagem e overbooking.</p>
+          <p>Defesa do passageiro em cancelamentos, atrasos de voos, extravio de bagagem e overbooking.</p>
+          <a href="#contato" class="card-link">Saiba mais →</a>
         </div>
       </div>
     </div>
@@ -83,35 +110,38 @@
   <!-- DIFERENCIAIS -->
   <section class="section" id="diferenciais">
     <div class="container">
-      <span class="label">Por que nos escolher</span>
-      <h2 class="center">Nossos Diferenciais</h2>
+      <div class="section-header center">
+        <span class="eyebrow">Por que nos escolher</span>
+        <h2>Nossos Diferenciais</h2>
+        <div class="gold-bar center"></div>
+      </div>
       <div class="diferenciais">
         <div class="diferencial">
           <div class="dif-num">01</div>
-          <div>
+          <div class="dif-body">
             <h3>Atendimento Personalizado</h3>
-            <p>Cada caso é tratado de forma única, com dedicação total ao cliente.</p>
+            <p>Cada caso é tratado de forma única, com dedicação total e escuta ativa ao cliente.</p>
           </div>
         </div>
         <div class="diferencial">
           <div class="dif-num">02</div>
-          <div>
+          <div class="dif-body">
             <h3>Rigor Técnico</h3>
             <p>Estratégias jurídicas fundamentadas em sólida formação e atualização constante.</p>
           </div>
         </div>
         <div class="diferencial">
           <div class="dif-num">03</div>
-          <div>
+          <div class="dif-body">
             <h3>Transparência</h3>
-            <p>Comunicação clara e honesta em todas as etapas do processo.</p>
+            <p>Comunicação clara e honesta em todas as etapas do processo jurídico.</p>
           </div>
         </div>
         <div class="diferencial">
           <div class="dif-num">04</div>
-          <div>
+          <div class="dif-body">
             <h3>Ética Profissional</h3>
-            <p>Atuação pautada pelos mais elevados padrões éticos da advocacia.</p>
+            <p>Atuação pautada pelos mais elevados padrões éticos da advocacia brasileira.</p>
           </div>
         </div>
       </div>
@@ -121,38 +151,49 @@
   <!-- CONTATO -->
   <section class="section section-dark" id="contato">
     <div class="container">
-      <span class="label label-light">Entre em Contato</span>
-      <h2 class="center">Fale com o Advogado</h2>
+      <div class="section-header center">
+        <span class="eyebrow eyebrow-light">Entre em Contato</span>
+        <h2>Fale com o Advogado</h2>
+        <div class="gold-bar center"></div>
+      </div>
       <div class="contato-grid">
         <div class="contato-info">
+          <p class="contato-intro">Agende sua consulta e receba orientação jurídica especializada. Atendimento presencial e online.</p>
           <div class="contato-item">
-            <span class="contato-icon">📞</span>
+            <div class="contato-icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.68A2 2 0 012 .99h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+            </div>
             <div>
               <strong>Telefone / WhatsApp</strong>
               <a href="https://wa.me/5531972361975" target="_blank">(31) 97236-1975</a>
             </div>
           </div>
           <div class="contato-item">
-            <span class="contato-icon">📧</span>
+            <div class="contato-icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
             <div>
               <strong>E-mail</strong>
               <a href="mailto:luizeduardovianaadv@gmail.com">luizeduardovianaadv@gmail.com</a>
             </div>
           </div>
           <div class="contato-item">
-            <span class="contato-icon">📸</span>
+            <div class="contato-icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </div>
             <div>
               <strong>Instagram</strong>
               <a href="https://instagram.com/luizeduardo.adv" target="_blank">@luizeduardo.adv</a>
             </div>
           </div>
-
         </div>
         <form class="contato-form" id="contato-form">
-          <input type="text" name="nome" placeholder="Seu nome" required />
-          <input type="email" name="email" placeholder="Seu e-mail" required />
-          <input type="tel" name="telefone" placeholder="Seu telefone" />
-          <textarea name="mensagem" placeholder="Descreva brevemente sua situação" rows="4" required></textarea>
+          <div class="form-row">
+            <input type="text" name="nome" placeholder="Seu nome completo" required />
+            <input type="email" name="email" placeholder="Seu e-mail" required />
+          </div>
+          <input type="tel" name="telefone" placeholder="Seu telefone / WhatsApp" />
+          <textarea name="mensagem" placeholder="Descreva brevemente sua situação jurídica" rows="5" required></textarea>
           <button type="submit" class="btn-primary">Enviar Mensagem</button>
         </form>
       </div>
@@ -163,8 +204,14 @@
   <footer class="footer">
     <div class="container footer-inner">
       <img src="Assinatura@2x-100.jpg" alt="Luiz Eduardo Viana Advogado" class="footer-assinatura" />
-      <p>© 2026 Luiz Eduardo Viana – Advogado. Todos os direitos reservados.</p>
-      <p class="footer-oab">OAB/MG</p>
+      <div class="footer-links">
+        <a href="#sobre">Sobre</a>
+        <a href="#atuacao">Atuação</a>
+        <a href="#diferenciais">Diferenciais</a>
+        <a href="#contato">Contato</a>
+      </div>
+      <p>© 2026 Luiz Eduardo Viana Alves – Advogado. Todos os direitos reservados.</p>
+      <p class="footer-oab">OAB/MG 243.550</p>
     </div>
   </footer>
 
