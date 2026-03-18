@@ -96,17 +96,18 @@ body {
 .nav-cta:hover { background: var(--gold-light) !important; transform: translateY(-1px); }
 
 .nav-formulario {
-  border: 1px solid rgba(168,169,173,0.5) !important;
+  background: var(--gold) !important;
+  color: var(--dark) !important;
   padding: 6px 14px;
   border-radius: var(--radius);
-  color: var(--gold) !important;
-  font-weight: 600 !important;
-  transition: border-color 0.2s, background 0.2s, color 0.2s !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.1em;
+  transition: background 0.2s, transform 0.2s !important;
 }
 .nav-formulario:hover {
-  background: rgba(168,169,173,0.1) !important;
-  border-color: var(--gold) !important;
-  color: var(--gold-light) !important;
+  background: var(--gold-light) !important;
+  color: var(--dark) !important;
+  transform: translateY(-1px);
 }
 
 .hamburger {
