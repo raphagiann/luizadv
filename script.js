@@ -1,10 +1,10 @@
-// Scroll suave nativo via CSS (scroll-behavior: smooth no html)
+// Scroll suave apenas para cliques em links âncora
 document.querySelectorAll('a[href^="#"]').forEach(link => {
   link.addEventListener('click', function(e) {
     const target = document.querySelector(this.getAttribute('href'));
     if (target) {
       e.preventDefault();
-      const offset = target.getBoundingClientRect().top + window.scrollY - 70;
+      const offset = target.getBoundingClientRect().top + window.scrollY - 72;
       window.scrollTo({ top: offset, behavior: 'smooth' });
     }
   });
