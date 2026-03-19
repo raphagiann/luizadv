@@ -35,26 +35,32 @@ scroll-padding-top: 80px;
 
 [data-theme="light"] {
   --bg: #ffffff;
-  --bg-section: #f8f6f2;
+  --bg-2: #f8f6f2;
   --bg-dark-section: #111c2e;
   --txt: #2c2c2c;
   --txt-muted: #6b6b7b;
   --txt-light: #e6e6e6;
-  --border: rgba(168,169,173,0.15);
+  --border-color: rgba(168,169,173,0.18);
+  --card-bg: rgba(0,0,0,0.02);
+  --input-bg: rgba(0,0,0,0.03);
+  --input-color: #2c2c2c;
+  --input-placeholder: rgba(0,0,0,0.3);
+  --nav-bg-scrolled: rgba(13,22,36,0.97);
 }
 
 [data-theme="dark"] {
   --bg: #0d1624;
-  --bg-section: #111c2e;
+  --bg-2: #111c2e;
   --bg-dark-section: #080f1c;
   --txt: #e6e6e6;
   --txt-muted: #a0a0b0;
   --txt-light: #e6e6e6;
-  --border: rgba(168,169,173,0.12);
-  --off-white: #111c2e;
-  --white: #e6e6e6;
-  --text: #e6e6e6;
-  --text-muted: #a0a0b0;
+  --border-color: rgba(168,169,173,0.12);
+  --card-bg: rgba(255,255,255,0.03);
+  --input-bg: rgba(255,255,255,0.05);
+  --input-color: #e6e6e6;
+  --input-placeholder: rgba(255,255,255,0.25);
+  --nav-bg-scrolled: rgba(13,22,36,0.97);
 }
 
 html { scroll-behavior: auto; }
@@ -84,7 +90,7 @@ body {
   transition: background 0.4s, box-shadow 0.4s;
 }
 .navbar.scrolled {
-  background: rgba(13, 22, 36, 0.97);
+  background: var(--nav-bg-scrolled);
   backdrop-filter: blur(16px);
   box-shadow: 0 1px 0 rgba(168,169,173,0.15);
 }
@@ -347,7 +353,7 @@ body {
 /* ── SECTIONS ── */
 .section { padding: clamp(60px, 8vw, 100px) 0; background: var(--bg); transition: background 0.3s; }
 .section-dark { background: var(--bg-dark-section); }
-.section-dark h2 { color: var(--white); }
+.section-dark h2 { color: #e6e6e6; }
 .section-dark p { color: rgba(230,230,230,0.7); }
 
 h2 {
@@ -414,8 +420,8 @@ h2 {
   gap: clamp(16px, 2vw, 28px);
 }
 .card {
-  background: rgba(255,255,255,0.03);
-  border: 1px solid rgba(168,169,173,0.12);
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
   border-radius: var(--radius);
   padding: clamp(24px, 3.5vw, 40px) clamp(20px, 2vw, 28px) clamp(20px, 2.5vw, 32px);
   transition: border-color 0.3s, transform 0.3s, background 0.3s;
@@ -478,11 +484,11 @@ h2 {
   gap: clamp(16px, 2vw, 28px);
   align-items: flex-start;
   padding: clamp(24px, 3.5vw, 40px) clamp(20px, 2.5vw, 36px);
-  background: var(--bg-section);
-  border: 1px solid rgba(168,169,173,0.08);
-  transition: background 0.2s;
+  background: var(--bg-2);
+  border: 1px solid var(--border-color);
+  transition: background 0.3s;
 }
-.diferencial:hover { background: var(--border); }
+.diferencial:hover { filter: brightness(0.95); }
 .dif-num {
   font-family: 'Cormorant Garamond', serif;
   font-size: clamp(2.2rem, 3.5vw, 3.8rem);
@@ -573,10 +579,10 @@ h2 {
 }
 .contato-form input,
 .contato-form textarea {
-  background: rgba(255,255,255,0.05);
-  border: 1px solid rgba(168,169,173,0.18);
+  background: var(--input-bg);
+  border: 1px solid var(--border-color);
   border-radius: var(--radius);
-  color: var(--text-light);
+  color: var(--input-color);
   padding: 13px 16px;
   font-family: 'Inter', sans-serif;
   font-size: clamp(0.8rem, 0.92vw, 0.88rem);
@@ -586,7 +592,7 @@ h2 {
   width: 100%;
 }
 .contato-form input::placeholder,
-.contato-form textarea::placeholder { color: rgba(255,255,255,0.25); }
+.contato-form textarea::placeholder { color: var(--input-placeholder); }
 .contato-form input:focus,
 .contato-form textarea:focus {
   border-color: var(--gold);
